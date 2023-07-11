@@ -1,0 +1,13 @@
+<p>{{title}}</p>
+<div class="items-holder">
+    <div class="item-holder" *ngFor="let item of items">
+         <div (click)="itemClickHandler(item)">
+            <div *ngIf="item.image">
+                <img src="{{item.image}}" width="20%" />
+            </div>
+            <div *ngIf="!item.image">
+                <img src="{{item.am}}" width="20%" />
+            </div>
+        </div>
+    </div>
+</div>

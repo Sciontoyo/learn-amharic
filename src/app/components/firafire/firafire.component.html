@@ -1,0 +1,14 @@
+<learn-amharic-top-list 
+    (selectedItem)="handleSelection($event)"
+    [items]="items" 
+    title="ፍራፍሬ (Fruits)"
+    >
+</learn-amharic-top-list>
+
+
+<mat-list class="words-holder">
+    <mat-list-item class="word-holder">
+        {{selectedItem?.am}}
+        <mat-divider></mat-divider>
+    </mat-list-item>
+</mat-list>

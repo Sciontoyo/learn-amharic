@@ -1,0 +1,17 @@
+
+    <p>{{title}}</p>
+    <div class="chars-holder">
+        <div class="char-holder" *ngFor="let fidel of fidelat">
+            <learn-amharic-fidel [fidel]="fidel.fidel"></learn-amharic-fidel>
+        </div>
+    </div>
+
+    <div class="words-holder">
+        <mat-card class="word-holder" *ngFor="let word of selectedWords">
+            <mat-card-header>
+                <mat-card-title class="word">{{word.am}} ({{word.en}})</mat-card-title>
+            </mat-card-header>
+        </mat-card>
+    </div>
+
+    <!-- <learn-amharic-util-list [tiles]="tiles"></learn-amharic-util-list> -->

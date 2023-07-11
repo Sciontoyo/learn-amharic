@@ -1,0 +1,24 @@
+<div class="game-container">
+    <div class="content-text">
+        <p *ngIf="selectBy=='image'">{{currentPlay?.contentInAm}}</p>
+        <img width="20%" *ngIf="selectBy=='word'" 
+        src="{{currentPlay?.contentImage}}" />
+    </div>
+    <div class="score-board">
+        <p>Score</p>
+        <p>{{score}}</p>
+    </div>
+</div>
+<div class="random-item-container">
+    <ng-container *ngIf="selectBy=='image'">
+        <img *ngFor="let image of currentPlay?.randomImages" width="10%" 
+        src="{{image}}"
+            (click)="itemClickHandler(image)" />
+    </ng-container>
+    <ng-container *ngIf="selectBy=='word'">
+        <div class="random-word" *ngFor="let word of currentPlay?.randomWords" 
+        (click)="itemClickHandler(word)">
+            {{word}}
+        </div>
+    </ng-container>
+</div>
