@@ -21,19 +21,19 @@ export class AlphabetsComponent implements OnInit {
   title: string = "Learn Fideloch"
   alphabet = [
     {
-      fidel: 'ሀ', 
+      fidel: 'አ',
       family: [
-        {char: 'ሀ', order: 1},
-        {char: 'ሁ', order: 2},
-        {char: 'ሂ', order: 3},
-        {char: 'ሃ', order: 4},
-        {char: 'ሄ', order: 5},
-        {char: 'ህ', order: 6},
-        {char: 'ሆ', order: 7},
+        {char: 'አ', order: 1},
+        {char: 'ኡ', order: 2},
+        {char: 'ኢ', order: 3},
+        {char: 'ኣ', order: 4},
+        {char: 'ኤ', order: 5},
+        {char: 'እ', order: 6},
+        {char: 'ኦ', order: 7},
       ]
     },
     {
-      fidel: 'ለ', 
+      fidel: 'ለ',
       family: [
         {char: 'ለ', order: 1},
         {char: 'ሉ', order: 2},
@@ -45,7 +45,7 @@ export class AlphabetsComponent implements OnInit {
       ]
     },
     {
-      fidel: 'ሐ', 
+      fidel: 'ሐ',
       family: [
         {char: 'ሐ', order: 1},
         {char: 'ሑ', order: 2},
@@ -57,7 +57,7 @@ export class AlphabetsComponent implements OnInit {
       ]
     },
     {
-      fidel: 'መ', 
+      fidel: 'መ',
       family: [
         {char: 'መ', order: 1},
         {char: 'ሙ', order: 2},
